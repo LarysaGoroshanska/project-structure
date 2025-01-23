@@ -8,10 +8,9 @@ const renderNode = (node) => {
   const Template = COMPONENTS[node.component];
 
   return (
-    <>
-      <Template />
+    <Template>
       {node?.children?.map(renderNode)}
-    </>
+    </Template>
   );
 };
 

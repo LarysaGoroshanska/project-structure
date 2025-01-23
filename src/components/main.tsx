@@ -1,3 +1,14 @@
-const Main = () => (<h2>Main</h2>);
+import React from 'react';
+
+type MainProps = {
+  children?: React.node[];
+};
+
+const Main = ({ children }: MainProps) => (
+  <div>
+    Main
+    {children}
+  </div>
+);
 
 export default Main;

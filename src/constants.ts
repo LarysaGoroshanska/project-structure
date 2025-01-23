@@ -4,8 +4,9 @@ import Main from './components/main.tsx';
 import ProductsList from './components/products-list.tsx';
 import Product from './components/product.tsx';
 import Footer from './components/footer.tsx';
+import { ComponentsMap, ConfigItem } from './types';
 
-export const COMPONENTS = {
+export const COMPONENTS: ComponentsMap = {
   'App': App,
   'Header': Header,
   'Main': Main,
@@ -14,7 +15,7 @@ export const COMPONENTS = {
   'Footer': Footer,
 };
 
-export const CONFIG = [
+export const CONFIG: ConfigItem[] = [
   {
     component: 'App',
     children: [
