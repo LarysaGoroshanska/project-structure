@@ -4,7 +4,7 @@ import './index.css';
 
 import { CONFIG, COMPONENTS } from './constants.ts';
 
-const renderNode = (node) => {
+const renderNode = (node: React.node) => {
   const Template = COMPONENTS[node.component];
 
   return (
